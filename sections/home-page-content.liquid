@@ -1,0 +1,78 @@
+<div class="home-page-content">
+  <div class="hero">
+    <h1>{{ section.settings.hero_title }}</h1>
+    <p>{{ section.settings.hero_subtitle }}</p>
+    {% if section.settings.show_button %}
+      <a href="{{ section.settings.hero_button_link }}" class="button">{{ section.settings.hero_button_text }}</a>
+    {% endif %}
+  </div>
+
+  <div class="featured-collections">
+    <h2>Colecciones Destacadas</h2>
+    <div class="collection-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'collection_item' %}
+          {% assign collection = collections[block.settings.collection] %}
+          {% if collection.featured_image %}
+            <a href="{{ collection.url }}">
+              <h3>{{ collection.title }}</h3>
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contenido de la página",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_title",
+      "label": "Título principal"
+    },
+    {
+      "type": "text",
+      "id": "hero_subtitle",
+      "label": "Subtítulo"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "default": true,
+      "label": "Mostrar botón"
+    },
+    {
+      "type": "text",
+      "id": "hero_button_text",
+      "label": "Texto del botón",
+      "default": "Ver más"
+    },
+    {
+      "type": "url",
+      "id": "hero_button_link",
+      "label": "Enlace del botón"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_item",
+      "name": "Colección",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Colección"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contenido de la página"
+    }
+  ]
+}
+{% endschema %}

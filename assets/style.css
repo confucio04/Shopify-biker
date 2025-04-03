@@ -1,0 +1,22 @@
+/* cosas generales */
+:root {
+  --color-primary: #1d1d1d;
+  --color-secondary: #efe6d4;
+  --color-tertiary: #121212;
+  --color-white: #ffffff;
+  --color-quinary: #f7f2eb;
+  --color-senary: #f2ede6;
+}
+.container {
+  max-width: 1242px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.btn {
+  cursor: pointer;
+}
+.text--white {
+  color: var(--color-white);
+}

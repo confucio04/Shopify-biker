@@ -1,0 +1,131 @@
+<div class="anouncement-bar">
+  <div class="container">
+    <div class="anouncement-bar__content">
+      <div class="anouncement-bar__icons-redes">
+        <ul class="icons-redes">
+          <li class="x-twitter">
+            <a href="#">
+              <img width="" height="" src="{{ 'twitter-alt.png' | asset_url }}" alt="x-twitter">
+            </a>
+          </li>
+          <li class="facebook">
+            <a href="#">
+              <img width="" height="" src="{{ 'facebook.png' | asset_url }}" alt="">
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="#">
+              <img width="" height="" src="{{ 'instagram.png' | asset_url }}" alt="">
+            </a>
+          </li>
+          <li class="youtube">
+            <a href="#">
+              <img width="" height="" src="{{ 'youtube.png' | asset_url }}" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="anouncement-bar__slider-promotions">
+        <button class="btn btn__arrow-left">&lt;</button>
+        <div class="slider-promotions">
+          {% for block in section.blocks %}
+            {% if block.type == 'promotion' %}
+              <div class="slider-promotions__item">
+                <span class="text--white">{{ block.settings.text }}</span>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <button class="btn btn__arrow-right">&gt;</button>
+      </div>
+      <div class="anouncement-bar__country-language">
+        <div class="country-language__locations">
+          <select name="country">
+            <option value="english">
+              <img width="" height="" src="{{ 'espana.png' | asset_url }}" alt="España">
+              <span>En</span>
+            </option>
+            <option value="español">
+              <img width="" height="" src="{{ 'estados-unidos.png' | asset_url }}" alt="Estados unidos">
+              <span>Es</span>
+            </option>
+          </select>
+        </div>
+        <div class="country-language__idioms">
+          <select name="idioms">
+            <option value="english">English</option>
+            <option value="español">Español</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .anouncement-bar {
+    background-color: var(--color-primary);
+    padding: 22px 0;
+  }
+  .anouncement-bar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .anouncement-bar__icons-redes {
+  }
+  .icons-redes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .anouncement-bar__slider-promotions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+  }
+  .slider-promotions {
+  }
+  .slider-promotions__item {
+  }
+  .anouncement-bar__country-language {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .country-language__idioms {
+  }
+</style>
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "promotion",
+      "name": "Promotion",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description of the promotion"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar",
+      "blocks": [
+        {
+          "type": "promotion",
+          "settings": {
+            "text": "Free shipping on orders over $50"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
