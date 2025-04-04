@@ -1,15 +1,377 @@
 {
   "article": [],
   "blog": [],
-  "brand": [],
-  "collection": [],
+  "collection": [
+    {
+      "key": "image",
+      "namespace": "custom",
+      "name": "Image",
+      "description": "custom Image",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "icon",
+      "namespace": "custom",
+      "name": "Icon",
+      "description": "custom icon",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "border_color",
+      "namespace": "custom",
+      "name": "Border Color",
+      "description": "custom color",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    },
+    {
+      "key": "hover_background",
+      "namespace": "custom",
+      "name": "Hover Background",
+      "description": "custom background",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    },
+    {
+      "key": "banner_image",
+      "namespace": "custom",
+      "name": "Banner Image",
+      "description": "custom banner",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "subtitle",
+      "namespace": "custom",
+      "name": "Subtitle Banner",
+      "description": "custom subtitle",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mobile_banner",
+      "namespace": "custom",
+      "name": "Banner Mobile",
+      "description": "Custom Banner Mobile",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "plp_banner_collections",
+      "namespace": "custom",
+      "name": "PLP Banner Collections",
+      "description": "Custom PLP Banner Collections ",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "plp_data_collections",
+      "namespace": "custom",
+      "name": "PLP Data Collections",
+      "description": "Custom Data Collections",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "company": [],
   "company_location": [],
   "location": [],
   "market": [],
   "order": [],
-  "page": [],
-  "product": [],
+  "page": [
+    {
+      "key": "faqs_pages",
+      "namespace": "custom",
+      "name": "Smoke Alarms FAQS ",
+      "description": "Custom FAQS Pages",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "carbon_monoxide_alarms_faqs",
+      "namespace": "custom",
+      "name": "Carbon Monoxide Alarms FAQS",
+      "description": "Custom FAQS Carbon",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "heat_alarms_faqs",
+      "namespace": "custom",
+      "name": "Heat Alarms FAQS",
+      "description": "Custom FAQS",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "water_alarms_faqs",
+      "namespace": "custom",
+      "name": "Water Alarms FAQS",
+      "description": "Custom FAQS",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "all_genarl_faqs",
+      "namespace": "custom",
+      "name": "All Genarl FAQS",
+      "description": "Custom FAQS",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "product": [
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "Color",
+      "description": "Defines the primary color or pattern, such as blue or striped",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "detector-type",
+      "namespace": "shopify",
+      "name": "Detector type",
+      "description": "Specifies the detection method used in safety devices, e.g. ionization optical, air-sampling",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "mounting-type",
+      "namespace": "shopify",
+      "name": "Mounting type",
+      "description": "Specifies how a product is installed or attached, such as clip-on or suction cup",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "detector-operation-mode",
+      "namespace": "shopify",
+      "name": "Detector operation mode",
+      "description": "Describes how a safety detector functions, such as interconnected or standalone",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "brand_title",
+      "namespace": "custom",
+      "name": "Title Product Brand",
+      "description": "custom brand title",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "power-source",
+      "namespace": "shopify",
+      "name": "Power source",
+      "description": "Specifies the power source a product uses to operate, such as solar or batteries",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "connectivity-technology",
+      "namespace": "shopify",
+      "name": "Connectivity technology",
+      "description": "Defines the method of data transfer in a product, e.g. Bluetooth, USB",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "sensor-type",
+      "namespace": "shopify",
+      "name": "Sensor type",
+      "description": "Identifies the type of sensor used in security or safety devices, e.g. infrared, ultrasonic",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "background_image",
+      "namespace": "custom",
+      "name": "Overview Banner Product",
+      "description": "custom background image",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "collection_smoke",
+      "namespace": "custom",
+      "name": "Product Collection Linked",
+      "description": "custom collection",
+      "type": {
+        "name": "collection_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "how_to_install",
+      "namespace": "custom",
+      "name": "How to install Template",
+      "description": "Custom HTML",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "resources_image",
+      "namespace": "custom",
+      "name": "Resources image",
+      "description": "Custom image",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "resources_description",
+      "namespace": "custom",
+      "name": "Resources Description",
+      "description": "Custom Resources Description",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "how_to_install_image_product",
+      "namespace": "custom",
+      "name": "How to Install Image Product",
+      "description": "Custom Image Product",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "resources_link_manual",
+      "namespace": "custom",
+      "name": "Resources link manual",
+      "description": "Custom download manual",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "faq",
+      "namespace": "custom",
+      "name": "FAQ",
+      "description": "Custom Faqs",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "border_color_how_to_install",
+      "namespace": "custom",
+      "name": "Border Color How To Install",
+      "description": "Custom Color Border",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    },
+    {
+      "key": "overview_icons_texts",
+      "namespace": "custom",
+      "name": "Overview Icons & Texts",
+      "description": "Custom Icons and Texts",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "overview_multiple_content",
+      "namespace": "custom",
+      "name": "Overview Multiple content",
+      "description": "Custom Multiple content",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "overview_product_description",
+      "namespace": "custom",
+      "name": "Overview Product Description",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "battery_life",
+      "namespace": "custom",
+      "name": "Battery life",
+      "description": "Battery life in years",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "connectivity",
+      "namespace": "custom",
+      "name": "Connectivity",
+      "description": "Device connectivity type",
+      "type": {
+        "name": "metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "variant": [],
   "shop": []
 }

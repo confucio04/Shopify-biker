@@ -1,0 +1,29 @@
+{
+  "name": "shopify-biker",
+  "version": "1.0.0",
+  "description": "Store bike",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"shopify theme dev -e development\" \"npx @tailwindcss/cli -i ./assets/tailwind.input.css -o ./assets/tailwind.output.css --watch\"" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/confucio04/Shopify-biker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/confucio04/Shopify-biker/issues"
+  },
+  "homepage": "https://github.com/confucio04/Shopify-biker#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.2",
+    "tailwindcss": "^4.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

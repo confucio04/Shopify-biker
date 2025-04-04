@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="">
     <link rel="shortcut icon" href="{{ 'favicon-bycle.png' | asset_url }}">
+    {{ 'tailwind.output.css' | asset_url | stylesheet_tag }}
     {{ 'reset.css' | asset_url | stylesheet_tag }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
